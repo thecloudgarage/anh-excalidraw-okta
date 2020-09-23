@@ -27,10 +27,20 @@
 
 ## DEPLOY EXCALIDRAW AS AN INTERNAL ONLY OR BACKEND APP
 
-* The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform
-* This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer
-* Navigate to excalidraw directory and open the manifest.yml file
-* Edit the app name and also the apps.internal route
+The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform. This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer. Navigate to excalidraw directory and open the manifest.yml file
+
+```
+---
+applications:
+  - name: anh-excalidraw
+    docker:
+      image: thecloudgarage/anh-excalidraw
+    routes:
+    - route: anh-excalidraw.apps.internal
+```
+
+* Edit the app name where <your-unique-app-name> is listed
+* Do not change the image path/name as the excalidraw image is already hosted on public docker hub via thecloudgarage/anh-excalidraw
 * Issue the command cf-push
 * The application will be deployed to your platform as an "INTERNALLY ONLY" app
 
