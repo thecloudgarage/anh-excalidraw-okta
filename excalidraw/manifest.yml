@@ -1,0 +1,7 @@
+---
+applications:
+  - name: anh-excalidraw
+    docker:
+      image: thecloudgarage/anh-excalidraw
+    routes:
+    - route: anh-excalidraw.apps.internal

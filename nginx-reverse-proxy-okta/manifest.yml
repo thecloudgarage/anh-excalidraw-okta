@@ -1,0 +1,12 @@
+---
+applications:
+  - name: anh-excalidraw-okta
+    docker:
+      image: thecloudgarage/anh-excalidraw-nginx-frontend-okta
+    env:
+      okta_url: dev-xxxxx.okta.com
+      okta_client_id: xxxxxxxxxxxxxxx
+      okta_client_secret: xxxxxxxxxxxxxxxxxxx_
+      redirect_url: "https://<app-name>.cfapps.io/redirect_url"
+      proxied_url: "<excalidraw-app-name>.apps.internal"
+# DONT PUT HTTP OR HTTPS IN THE PROXIED URL

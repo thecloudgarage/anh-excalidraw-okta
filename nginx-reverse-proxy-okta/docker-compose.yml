@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  nginx-reverse-proxy-okta:
+    image: nginx-reverse-proxy-okta
+    container_name: nginx-reverse-proxy-okta
+    ports:
+      - "80:80"
+    environment:
+      - okta_url=dev-xxxxx.okta.com
+      - okta_client_id=xxxxxxxxx
+      - okta_client_secret=xxxxxxxxxxxxx
+
