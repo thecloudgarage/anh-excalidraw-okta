@@ -32,14 +32,14 @@ The Excalidraw will be deployed as an internal only application and cannot be di
 ```
 ---
 applications:
-  - name: <your-unique-app-name>
+  - name: your-unique-app-name
     docker:
       image: thecloudgarage/anh-excalidraw
     routes:
-    - route: <your-unique-app-name>.apps.internal
+    - route: your-unique-app-name.apps.internal
 ```
 
-* Edit the app name where "<your-unique-app-name>" is listed
+* Edit the app name where "your-unique-app-name" is listed
 * Do not change the image path/name as the excalidraw image is already hosted on public docker hub via thecloudgarage/anh-excalidraw
 * Issue the command cf-push & the application will be deployed to your platform as an "INTERNALLY ONLY" app
 
