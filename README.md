@@ -1,3 +1,21 @@
+<div align="center" style="display:flex;flex-direction:column;">
+  <a href="https://excalidraw.com">
+    <img src="./public/og-image.png" alt="Excalidraw logo: Sketch handrawn like diagrams." />
+  </a>
+  <h3>Excalidraw is a whiteboard tool that lets you easily sketch diagrams with a hand-drawn feel.</h3>
+  <p>
+    <a href="https://twitter.com/Excalidraw">
+      <img alt="Follow Excalidraw on Twitter" src="https://img.shields.io/twitter/follow/excalidraw.svg?label=follow+excalidraw&style=social&logo=twitter">
+    </a>
+    <a target="_blank" href="https://crowdin.com/project/excalidraw">
+      <img src="https://badges.crowdin.net/excalidraw/localized.svg">
+    </a>
+    <a target="_blank" href="https://hub.docker.com/r/excalidraw/excalidraw">
+      <img src="https://img.shields.io/docker/pulls/excalidraw/excalidraw">
+    </a>
+  </p>
+</div>
+
 ## Build the application
 
 * Install nodejs
