@@ -25,7 +25,7 @@
 
 ## OKTA SETUP
 
-## DEPLOY EXCALIDRAW
+## DEPLOY EXCALIDRAW AS AN INTERNAL ONLY OR BACKEND APP
 
 * Navigate to excalidraw directory and open the manifest.yml file
 * Edit the app name and also the apps.internal route
@@ -37,56 +37,16 @@
 * Navigate to nginx-frontend directory
 * Edit the manifest.yml
 * Change the app name to reflect the redirect url and initiate login url provided in the OKTA setup
-* Change the 
+* Change the environmental variables 
+* Issue the command "cf push"
 
+## ENABLE SECURE CONTAINER-TO-CONTAINER NETWORKING b/w NGINX FRONTEND & EXCALIDRAW APP
 
-
-* Install nodejs
-* sudo npm install
-* npm run-script build
-* cd build
-* touch Staticfile
-* cf push
-
-## Push to Pivotal Web Services
-* Register on run.pivotal.io
-* Install cf cli on windows or linux
-* clone or download this git repo
-* cd into the repo directory
-* cf login
-* cf push <unique-app-name>
-* Accessing the application over https will also enable collaborative whiteboarding via rooms
-
-## Push to Pivotal Web Services with a docker image
-
+* Tanzu Application Service is high on security
+* By default container apps cannot talk to each other on internal network
+* We have to deploy networking policies to enable the same
+* Issue the command 
 ```
-cf login
-cf push <unique-app-name> --docker-image thecloudgarage/anh-new-whiteboard
+cf add-network-policy <nginx-app-name> <excalidraw-app-name> --protocol tcp --port 80
 ```
-* Accessing the application over https will also enable collaborative whiteboarding via rooms
-
-Have fun!!!
-  
-## Try it now
-
-Go to https://excalidraw.com to start sketching.
-
-Read our [blog](https://blog.excalidraw.com) and follow the [guides](https://howto.excalidraw.com) to learn more about Excalidraw and how to use it effectively.
-
-## Run the code
-
-### Code Sandbox
-
-- Go to https://codesandbox.io/s/github/excalidraw/excalidraw
-  - You may need to sign in with Github and reload the page
-- You can start coding instantly, and even send PRs from there!
-
-### Local Installation
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-
-#### Clone the repo
-
-```bash
-git clone https://github.com/excalidraw/excalidraw.git
-```
+* Access the application on the NGINX app URL
