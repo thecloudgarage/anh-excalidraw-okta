@@ -27,6 +27,8 @@
 
 ## DEPLOY EXCALIDRAW AS AN INTERNAL ONLY OR BACKEND APP
 
+* The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform
+* This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer
 * Navigate to excalidraw directory and open the manifest.yml file
 * Edit the app name and also the apps.internal route
 * Issue the command cf-push
