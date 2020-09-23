@@ -1,7 +1,7 @@
 ---
 applications:
-  - name: anh-excalidraw
+  - name: <your-unique-app-name>
     docker:
       image: thecloudgarage/anh-excalidraw
     routes:
-    - route: anh-excalidraw.apps.internal
+    - route: <your-unique-app-name>.apps.internal
