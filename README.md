@@ -18,7 +18,7 @@
 
 ## PRE-REQUISITES
 
-* You have a Tanzu Application Services environment running
+* You have a Tanzu Application Services environment running with access to public docker hub registry.
 * You have an Org, Space and User defined to deploy applications
 * You have cf CLI v7 installed on your machine as a developer of these applications
 * You are logged into your Org/Space via cf-cli
@@ -32,17 +32,16 @@ The Excalidraw will be deployed as an internal only application and cannot be di
 ```
 ---
 applications:
-  - name: anh-excalidraw
+  - name: <your-unique-app-name>
     docker:
       image: thecloudgarage/anh-excalidraw
     routes:
-    - route: anh-excalidraw.apps.internal
+    - route: <your-unique-app-name>.apps.internal
 ```
 
-* Edit the app name where <your-unique-app-name> is listed
+* Edit the app name where "<your-unique-app-name>" is listed
 * Do not change the image path/name as the excalidraw image is already hosted on public docker hub via thecloudgarage/anh-excalidraw
-* Issue the command cf-push
-* The application will be deployed to your platform as an "INTERNALLY ONLY" app
+* Issue the command cf-push & the application will be deployed to your platform as an "INTERNALLY ONLY" app
 
 ## DEPLOY NGINX FRONTEND
 
