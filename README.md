@@ -20,14 +20,20 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
   </p>
 </div>
 
-## PRE-REQUISITES
+### PRE-REQUISITES
 
 * You have a Tanzu Application Services environment running with access to public docker hub registry.
 * You have an Org, Space and User defined to deploy applications
 * You have cf CLI v7 installed on your machine as a developer of these applications
-* You are logged into your Org/Space via cf-cli
 
-## OKTA SETUP
+
+### GETTING STARTED
+
+* STEP-1: Okta setup
+* STEP-2: Clone this git repository and prepare the manifest.yml deployment file
+* STEP-3: Deploy the application
+
+#### STEP-1 OKTA SETUP
 
 ## DEPLOY EXCALIDRAW AS AN INTERNAL ONLY OR BACKEND APP
 
