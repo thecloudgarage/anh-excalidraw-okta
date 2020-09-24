@@ -1,4 +1,4 @@
-## OKTA SETUP (10 minutes)
+## OKTA SETUP (~20 minutes)
 
 ***Sign up on the OKTA portal*** 
   * Go to https://developer.okta.com/signup & provide the signup details
