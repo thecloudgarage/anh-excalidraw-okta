@@ -28,17 +28,16 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
 * You have an Org, Space and User defined to deploy applications
 * You have cf CLI v7 installed on your machine as a developer of these applications
 
-- - - -
-
-### GETTING STARTED
-
-#### STEP-1 OKTA SETUP (10 minutes)
+#### OKTA SETUP (10 minutes)
 
 Please read [okta-setup.md](/okta-setup.md)
 
 * At the end of the okta setup, you will gather the dev-xxxxx.okta.com url, client id, client secret that will be required as env variables during app deployment
+- - - -
 
-#### STEP-2 DEPLOY THE APPLICATIONS ON TANZU APPLICATION SERVICE PLATFORM
+### GETTING STARTED
+
+#### DEPLOY THE APPLICATIONS ON TANZU APPLICATION SERVICE PLATFORM
 
 The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform. This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer. The frontend-proxy layer is a NGINX reverse proxy with a LUA module that has an OAuth2.0 integration with OKTA.
 
