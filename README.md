@@ -53,10 +53,10 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
   * Then click on "Add Application" and select "Web" as the type and "next"
   * You will arrive at a page to setup your Application
   * Give it a suitable name
-  * Base URIs: This url must be the same as the one that you will use to access your NGINX reverse proxy application
-    * *Example*- https:<unique-string>-excalidraw-frontend.<your-cf-apps-domain>
-* Login redirect URIs: Same as above but suffixed with redirect_uri path
-* Example: https:<unique-string>-excalidraw-frontend.<your-cf-apps-domain>/redirect_url
+  * Base URIs: This url must be the same as the one that you will use to access the fronend NGINX reverse proxy
+    * *Example* <https:unique-string-excalidraw-frontend.your-cf-apps-domain>
+  * Login redirect URIs: Same as above but suffixed with redirect_uri path
+    * *Example* <https:unique-string-excalidraw-frontend.your-cf-apps-domain/redirect_url>
 * Leave everything else to defaults and click done
 * On the next page, you will see a "Client ID" and "Client secret" value. Copy those for further use
 * Next, click on the "Assignments" tab for your Application
