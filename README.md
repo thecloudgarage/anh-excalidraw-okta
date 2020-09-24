@@ -6,7 +6,7 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
   <a href="https://excalidraw.com">
     <img src="Excalidraw-okta.png" alt="Excalidraw logo: Sketch handrawn like diagrams." />
   </a>
-  <h3>Excalidraw is a whiteboard tool that lets you easily sketch diagrams with a hand-drawn feel. In this scenario, we are leveraging the simplicity of TANZU APPLICATION SERVICES platform to deploy the Excalidraw app along with an authentication workflow with OKTA as the OIDC provider</h3>
+  <h3>Excalidraw is a whiteboard tool that lets you easily sketch diagrams with a hand-drawn feel.</h3>
   <p>
     <a href="https://twitter.com/Excalidraw">
       <img alt="Follow Excalidraw on Twitter" src="https://img.shields.io/twitter/follow/excalidraw.svg?label=follow+excalidraw&style=social&logo=twitter">
