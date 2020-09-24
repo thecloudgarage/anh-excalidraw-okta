@@ -24,12 +24,5 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
 
 ### GETTING STARTED
 
-#### OKTA SETUP (10 minutes)
-
-Please read [okta-setup.md](/okta-setup.md)
-
-* At the end of the okta setup, you will gather the dev-xxxxx.okta.com url, client id, client secret that will be required as env variables during app deployment
-
-#### DEPLOY ON TANZU APPLICATION SERVICE PLATFORM
-
-Please read [tanzu-app-services.md](/tanzu-app-services.md)
+* ***Complete the OKTA setup*** by following instructions in [okta-setup.md](/okta-setup.md)
+* ***Deploy on Tanzu Application Services*** Please complete the instructions on [tanzu-app-services.md](/tanzu-app-services.md)
