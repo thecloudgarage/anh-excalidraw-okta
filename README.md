@@ -29,11 +29,7 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
 
 ### GETTING STARTED
 
-* STEP-1: Okta setup
-* STEP-2: Clone this git repository and prepare the manifest.yml deployment file
-* STEP-3: Deploy the application
-
-#### STEP-1 OKTA SETUP
+#### STEP-1 OKTA SETUP (10 minutes)
 
 * Go to https://developer.okta.com/signup & provide the signup details
 * On the next page, scroll down and select "Do it Later" for customizations
@@ -79,14 +75,14 @@ The Excalidraw will be deployed as an internal only application and cannot be di
 ```
 ---
 applications:
-  - name: your-unique-app-name
+  - name: <unique-string>-excalidraw
     docker:
       image: thecloudgarage/anh-excalidraw
     routes:
-    - route: your-unique-app-name.apps.internal
+    - route: <unique-string>-excalidraw.apps.internal
 ```
 
-* Edit the app name where "your-unique-app-name" is listed
+* Replace the 
 * Do not change the image path/name as the excalidraw image is already hosted on public docker hub via thecloudgarage/anh-excalidraw
 * Issue the command cf-push & the application will be deployed to your platform as an "INTERNALLY ONLY" app
 
