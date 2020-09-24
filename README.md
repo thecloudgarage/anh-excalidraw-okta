@@ -1,3 +1,7 @@
+# Excalidraw with a TWIST!!!
+The attempt is to mashup Excalidraw app (ReactJS + WebSockets) with OAuth2.0 authentication deployed on a NGINX frontend proxy-layer integrated with OKTA. In addition, we use this combination of frontend (NGINX-proxy-auth-layer) plus backend (excalidraw app) to be deployed on a cloud native platform like Tanzu Application Services.
+
+## Architectural view
 <div align="center" style="display:flex;flex-direction:column;">
   <a href="https://excalidraw.com">
     <img src="Excalidraw-okta.png" alt="Excalidraw logo: Sketch handrawn like diagrams." />
