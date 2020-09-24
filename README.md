@@ -69,7 +69,7 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
     * CLIENT ID, CLIENT SECRET and the REDIRECT URL. These values are gathered during the above steps.
   * We will need these values as variables while deploying our application
 
-## DEPLOY THE APPLICATIONS ON TANZU APPLICATION SERVICE PLATFORM
+#### STEP-2 DEPLOY THE APPLICATIONS ON TANZU APPLICATION SERVICE PLATFORM
 
 The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform. This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer. The frontend-proxy layer is a NGINX reverse proxy with a LUA module that has an OAuth2.0 integration with OKTA.
 
@@ -99,7 +99,7 @@ applications:
 * Change the environmental variables with the values that you collected from the OKTA setup
 * Issue the command "cf push" to deploy the frontend proxy and excalidraw app via single manfiest file
 
-## ENABLE SECURE CONTAINER-TO-CONTAINER NETWORKING b/w NGINX FRONTEND & EXCALIDRAW APP
+#### STEP-3 ENABLE SECURE CONTAINER-TO-CONTAINER NETWORKING b/w NGINX FRONTEND & EXCALIDRAW APP
 
 * Tanzu Application Service is high on security controls
 * By default container apps cannot talk to each other on internal network
