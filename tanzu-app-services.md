@@ -1,6 +1,6 @@
 ### Deploying Excalidraw (frontend & backend) on TANZU Application Services
 
-The Excalidraw will be deployed as an internal only application and cannot be directly accessed from sources external to the platform. This represents a classical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer. The frontend-proxy layer is a NGINX reverse proxy with a LUA module that has an OAuth2.0 integration with OKTA.
+The Excalidraw will be deployed as an internal only application on the Tanzu Application Services platform. This means we will not be able to access this app directly. Instead we will frontend the excalidraw app with a frontend nginx proxy app. This represents a typical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer and you do not need to alter any of the application code. In this case, the frontend-proxy layer is a NGINX reverse proxy with a LUA module that has an OAuth2.0 integration with OKTA.
 
 * Clone this git repository. Under the parent directory, you will find a manifest.yml file that constructs the deployment schema for our application
 
