@@ -40,5 +40,5 @@ applications:
 cf add-network-policy unique-string-excalidraw-frontend unique-string-excalidraw-backend --protocol tcp --port 80
 ```
 
-* Access the application on the NGINX app URL on <https://unique-string-excalidraw-frontend.cfapps-domain>
+* Access the application on the NGINX app URL on <https://unique-string-excalidraw-frontend.cf-apps-domain>
 * You will be redirected to OKTA for sign-in. Upon successful authentication, you will be able to access your self-hosted excalidraw app
