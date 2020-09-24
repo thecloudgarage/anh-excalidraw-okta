@@ -54,20 +54,20 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
   * You will arrive at a page to setup your Application
   * Give it a suitable name
   * Base URIs: This url must be the same as the one that you will use to access the fronend NGINX reverse proxy
-    * *Example* <https:unique-string-excalidraw-frontend.your-cf-apps-domain>
+    * *Example* <https://unique-string-excalidraw-frontend.your-cf-apps-domain>
   * Login redirect URIs: Same as above but suffixed with redirect_uri path
-    * *Example* <https:unique-string-excalidraw-frontend.your-cf-apps-domain/redirect_url>
-* Leave everything else to defaults and click done
-* On the next page, you will see a "Client ID" and "Client secret" value. Copy those for further use
-* Next, click on the "Assignments" tab for your Application
-* Click on "Assign" > "Assign to People" and select users that should be able to access this application
-* Next, click on "API" on the top admin bar and then "Trusted Origins"
-* Click on "Add Origins" and give a suitable name and in the origin URL, type the same value as in BASE URL and also select both the options in TYPE
-* Example: https:<unique-string>-excalidraw-frontend.<your-cf-apps-domain> for the Origin URL
-* Now you are done with the OKTA setup. At the end of this exercise, you will need the below values to proceed further
-* Your OKTA URL dev-xxxxxx.okta.com
-* CLIENT ID, CLIENT SECRET and the REDIRECT URL. These values are gathered during the above steps.
-* We will need these values as variables while deploying our application
+    * *Example* <https://unique-string-excalidraw-frontend.your-cf-apps-domain/redirect_url>
+  * Leave everything else to defaults and click done
+  * On the next page, you will see a "Client ID" and "Client secret" value. Copy those for further use
+  * Next, click on the "Assignments" tab for your Application
+  * Click on "Assign" > "Assign to People" and select users that should be able to access this application
+  * Next, click on "API" on the top admin bar and then "Trusted Origins"
+  * Click on "Add Origins" and give a suitable name and in the origin URL, type the same value as in BASE URL and also select both the options in TYPE
+    * *Example* <https://unique-string-excalidraw-frontend.your-cf-apps-domain>
+  * Now you are done with the OKTA setup. At the end of this exercise, you will need the below values to proceed further
+    * Your OKTA URL dev-xxxxxx.okta.com
+    * CLIENT ID, CLIENT SECRET and the REDIRECT URL. These values are gathered during the above steps.
+  * We will need these values as variables while deploying our application
 
 ## DEPLOY THE APPLICATIONS ON TANZU APPLICATION SERVICE PLATFORM
 
