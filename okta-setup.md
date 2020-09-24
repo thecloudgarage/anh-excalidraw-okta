@@ -1,4 +1,4 @@
-## STEP-1 OKTA SETUP (10 minutes)
+## OKTA SETUP (10 minutes)
 
 * ***SIGNUP*** Go to https://developer.okta.com/signup & provide the signup details
   * On the next page, scroll down and select "Do it Later" for customizations
