@@ -20,7 +20,7 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
   </p>
 </div>
 
-Markup :  - - - -
+- - - -
 
 ### PRE-REQUISITES
 
@@ -28,7 +28,7 @@ Markup :  - - - -
 * You have an Org, Space and User defined to deploy applications
 * You have cf CLI v7 installed on your machine as a developer of these applications
 
-Markup :  - - - -
+- - - -
 
 ### GETTING STARTED
 
