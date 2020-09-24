@@ -16,7 +16,7 @@ applications:
       okta_url: dev-xxxxx.okta.com
       okta_client_id: xxxxxxxxxxxxxxx
       okta_client_secret: xxxxxxxxxxxxxxxxxxx_
-      redirect_url: "https://unique-string-excalidraw-frontend.cf-apps-domain/redirect_url"
+      redirect_url: "https://unique-string-excalidraw-frontend.your-cf-apps-domain/redirect_url"
       proxied_url: "unique-string-excalidraw-backend.apps.internal"
   - name: unique-string-excalidraw-backend
     docker:
