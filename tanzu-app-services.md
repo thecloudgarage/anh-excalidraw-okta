@@ -1,8 +1,13 @@
 ### Deploying Excalidraw (frontend & backend) on TANZU Application Services
 
-The Excalidraw will be deployed as an internal only application on the Tanzu Application Services platform. This means we will not be able to access this app directly. Instead we will frontend the excalidraw app with a frontend nginx proxy app. This represents a typical way to approach separation of concerns, where the authentication workflows are handled via the frontend-proxy layer and you do not need to alter any of the application code. In this case, the frontend-proxy layer is a NGINX reverse proxy with a LUA module that has an OAuth2.0 integration with OKTA.
+The Excalidraw will be deployed as a combination of actual app (docker image) along with a nginx based proxy-layer (docker image) that is integrated with OKTA for OAuth athentication.
 
-* Clone this git repository. Under the parent directory, you will find a manifest.yml file that constructs the deployment schema for our application
+* Clone this git repository and edit the manifest.yml under the root directory
+* Enable docker support on your Cloud Foundry platform 
+
+```
+cf enable-feature-flag diego_docker
+```
 
 #### manifest.yml
 
@@ -40,5 +45,5 @@ applications:
 cf add-network-policy unique-string-excalidraw-frontend unique-string-excalidraw-backend --protocol tcp --port 80
 ```
 
-* Access the application on the NGINX app URL on <https://unique-string-excalidraw-frontend.cf-apps-domain>
+* Access the application on the NGINX app URL on <https://unique-string-excalidraw.cf-apps-domain>
 * You will be redirected to OKTA for sign-in. Upon successful authentication, you will be able to access your self-hosted excalidraw app
