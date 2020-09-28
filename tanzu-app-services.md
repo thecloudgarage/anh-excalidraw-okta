@@ -9,20 +9,20 @@ The Excalidraw will be deployed as an internal only application on the Tanzu App
 ```
 ---
 applications:
-  - name: unique-string-excalidraw-frontend
+  - name: unique-string-excalidraw-backend
+    docker:
+      image: thecloudgarage/anh-excalidraw
+    routes:
+    - route: unique-string-excalidraw-backend.apps.internal
+  - name: unique-string-excalidraw
     docker:
       image: thecloudgarage/anh-excalidraw-nginx-frontend-okta
     env:
       okta_url: dev-xxxxx.okta.com
       okta_client_id: xxxxxxxxxxxxxxx
       okta_client_secret: xxxxxxxxxxxxxxxxxxx_
-      redirect_url: "https://unique-string-excalidraw-frontend.your-cf-apps-domain/redirect_url"
+      redirect_url: "https://unique-string-excalidraw.your-cf-apps-domain/redirect_url"
       proxied_url: "unique-string-excalidraw-backend.apps.internal"
-  - name: unique-string-excalidraw-backend
-    docker:
-      image: thecloudgarage/anh-excalidraw
-    routes:
-    - route: unique-string-excalidraw-backend.apps.internal
 ```
 
 * Replace the ***unique-string*** value with something (e.g. your name)
