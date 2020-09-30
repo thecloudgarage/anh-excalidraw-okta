@@ -3,7 +3,7 @@ Excalidraw is a beautiful attempt at collaborative whiteboarding combining simpl
 
 ### GETTING STARTED 
 
-#### TANZU APPLICATION SERVICES OR CLOUD-FOUNDRY 
+#### DEPLOYMENT ON TANZU APPLICATION SERVICES OR CLOUD-FOUNDRY 
 
 * ***Complete the OKTA setup*** by following instructions in [okta-setup.md](/okta-setup.md)
 * ***Deploy on Tanzu Application Services*** Please complete the instructions on [tanzu-app-services.md](/tanzu-app-services.md)
